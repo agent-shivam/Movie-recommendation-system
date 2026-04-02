@@ -1,9 +1,6 @@
 fastapi
 uvicorn
 faiss-cpu
-sentence-transformers
+sentence-transformers==2.2.2
 pandas
 numpy
-streamlit
-requests
-torch
