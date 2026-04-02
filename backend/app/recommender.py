@@ -9,7 +9,7 @@ class MovieRecommender:
     def __init__(self):
         BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
-        self.model = SentenceTransformer('all-MiniLM-L6-v2')
+        self.model = SentenceTransformer('all-MiniLM-L6-v2', device='cpu')
 
         self.index = faiss.read_index(
             os.path.join(BASE_DIR, "models", "faiss_index.bin")
